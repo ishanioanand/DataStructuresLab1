@@ -11,15 +11,18 @@ assert reverse_and_uppercase("DataStructures") == "SERUTCURTSATAD"
 
 #2. Write a function basic_operations(a, b) that returns a tuple containing the sum, difference, product, and quotient of a and b.
 def basic_operations(a, b):
-    # Your code here
-    pass
+    return (a+b,a-b,a*b,a/b)
 
 assert basic_operations(10, 2) == (12, 8, 20, 5)
 
 #3. Write a function check_sign(number) that returns "Positive", "Negative", or "Zero" based on the input number.
 def check_sign(number):
-    # Your code here
-    pass
+    if number<0 :
+      return ("Negative")
+    if number > 0 :
+      return ("Positive")
+    elif number == 0:
+      return ("Zero")
 
 assert check_sign(5) == "Positive"
 assert check_sign(-3) == "Negative"
@@ -33,7 +36,7 @@ def sum_of_evens(numbers):
 assert sum_of_evens([1, 2, 3, 4, 5, 6]) == 12
 assert sum_of_evens([7, 8, 9, 10]) == 18
 
-#5. Write a recursive function fibonacci(n) that returns the nth Fibonacci number. Without recursion. Must use loop.
+#5. Write a function fibonacci(n) that returns the nth Fibonacci number. Without recursion. Must use loop.
 def fibonacci(n):
     # Your code here
     pass
